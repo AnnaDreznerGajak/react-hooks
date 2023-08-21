@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import RefHooks from './components/ref/RefHooks';
+import LayoutEffectHook from './components/layoutEffect/LayoutEffectHook';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RefHooks />
+    <LayoutEffectHook />
   </React.StrictMode>
 );
 
