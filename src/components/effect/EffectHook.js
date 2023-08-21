@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+export const commentsURL = "https://jsonplaceholder.typicode.com/comments";
+
 function EffectHook() {
 
     const [data, setData] = useState("");
     const [count, setCount] = useState(0);
 
     useEffect(() => {
-       axios.get("https://jsonplaceholder.typicode.com/comments").then((response)=> {
-        setData(response.data[0].email);
-       })
-
-       Promise.resolve({data: [{email: 'email@gmail.com'}]}).then((response) => {
+       axios.get(commentsURL).then((response)=> {
         setData(response.data[0].email);
        })
     }, []);
@@ -21,7 +19,7 @@ function EffectHook() {
     return (
         <div style={{textAlign: 'center'}}>
             Hello world!
-            {data != "" && <p data-testid="data">{data}</p>}
+            {data != "" && <p>{data}</p>}
             <p>{count}</p>
             <button onClick={()=> { setCount(prev => {
                 return prev + 1

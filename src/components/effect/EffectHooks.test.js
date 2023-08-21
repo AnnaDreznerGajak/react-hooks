@@ -1,8 +1,12 @@
 import EffectHook from "./EffectHook";
 import {render, screen} from "@testing-library/react";
 
-test("check if data is rendering", async () => {
-    render(<EffectHook />);
-    const data = screen.getByTestId("data").textContent;
-   
-});
+describe("EffectHook test", () => {
+    test("check if email test@gmail.com is displayed", async () => {
+       render(<EffectHook/>);
+
+       const emailItem = await screen.findByText("test@gmail.com");
+       expect(emailItem).toBeVisible();
+    });
+})
+
