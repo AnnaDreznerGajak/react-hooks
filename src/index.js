@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import EffectHook from './components/effect/EffectHook';
+import RefHooks from './components/ref/RefHooks';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <EffectHook />
+    <RefHooks />
   </React.StrictMode>
 );
 
