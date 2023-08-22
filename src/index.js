@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ImperactiveHandleHook from './components/imperativeHandle/ImperativeHandleHook';
+import ContextHook from './components/context/ContexHook';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ImperactiveHandleHook />
+    <ContextHook />
   </React.StrictMode>
 );
 
