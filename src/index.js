@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import LayoutEffectHook from './components/layoutEffect/LayoutEffectHook';
+import ImperactiveHandleHook from './components/imperativeHandle/ImperativeHandleHook';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LayoutEffectHook />
+    <ImperactiveHandleHook />
   </React.StrictMode>
 );
 
