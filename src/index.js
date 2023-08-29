@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import MemoHook from './components/memo/MemoHook';
+import { CustomHook } from './components/custom/CustomHook';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MemoHook />
+    <CustomHook/>
   </React.StrictMode>
 );
 
